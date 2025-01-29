@@ -1,0 +1,65 @@
+<div class="pp">
+    <div class="pp_wrapper">
+        <div class="pp__sticky-close">
+            <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn"></button>
+        </div>
+    </div>
+    <div class="pp__container">
+        <h2 class="pp__title " >Заполните форму <br> и мы подберем площадку</h2>
+        <form class="pp_form form">
+          <!--Радио-->
+          <div class="radio">
+            <span class="field__title">Формат мероприятия:</span>
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="seminar" checked>
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Мастер-класс/семинар</span>
+                </label>
+                            
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="concert">
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Концерт/выступление</span>
+                </label>
+
+                <label class="radio__item">
+                    <input class="radio__input" type="radio" name="format" value="vistavka">
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Выставка/показ</span>
+                  </label>
+
+                  <label class="radio__item">
+                    <input class="radio__input" type="radio" name="format" value="drugoe">
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Другое</span>
+                  </label>
+          </div>
+          <!--Инпут-->
+          <label class="field">
+                <span class="field__label">Имя*</span>
+                <input type="text" name="name" placeholder="Имя" class="field__input" required>
+          </label>
+          <!--Дропдаун-->
+          <label class="field">
+                <span class="field__title">Планируемое количество посетителей:</span>
+                <select class="field__select" name="amount">
+                  <option value="20">до 20 человек</option>
+                  <option value="100">от 20 до 100 человек</option>
+                  <option value="500">от 100 до 500 человек</option>
+                  <option value="1000">более 500 человек</option>
+                </select>
+          </label>
+          <!--Чекбокс-->
+          <label class="check">
+              <input type="checkbox" name="agree" class="check__input" required checked/>
+              <span class="check__mark"></span>
+              <span class="check__label check__label--s">
+                  Я соглашаюсь с пользовательским соглашением и с политикой
+                  использования персональных данных
+                </span>
+          </label>
+        </form>
+    </div>
+        
+    </div>
+</div>
